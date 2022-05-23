@@ -13,7 +13,7 @@ import { make as through2 } from "https://deno.land/x/through2@v1.0.0/mod.ts";
 import { Buffer } from "https://deno.land/std@0.140.0/node/buffer.ts";
 import { BufferListStream } from "https://raw.githubusercontent.com/sail-sail/buffer_list/main/mod.ts";
 
-function randomBytes (len) {
+function randomBytes(len) {
   const bytes = new Uint8Array(len)
   for (let i = 0; i < len; i++) {
     bytes[i] = Math.floor(Math.random() * 0xff)
